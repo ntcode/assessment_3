@@ -1,0 +1,11 @@
+<p>
+  <div ng-repeat="Hero in data.response">
+    <h1>{{ Hero.Alias }}</h1>
+    <p> Firstname: {{ Hero.Firstname }}</p>
+    <p> Lastname: {{ Hero.Lastname }}</p>
+    <p> City: {{ Hero.City }}</p>
+    <p> Powername: {{ Hero.Powername }}</p>
+
+    <button ng-click="deleteHero(Hero._id)">Delete</button>
+  </div>
+</p>
